@@ -1,4 +1,4 @@
-package com.pugzarecute.tipper;
+package com.pugzarecute.tipper.trade_provider;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -11,9 +11,6 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class VillagerBookTradeProvider implements VillagerTrades.ItemListing {
-    public VillagerBookTradeProvider(){
-
-    }
     @Nullable
     @Override
     public MerchantOffer getOffer(Entity p_35706_, Random p_35707_) {
