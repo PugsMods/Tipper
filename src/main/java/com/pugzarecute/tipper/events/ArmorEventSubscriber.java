@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-public class ArmorEventSubscriver {
+public class ArmorEventSubscriber {
     static AttributeModifier lvl1 = new AttributeModifier("3f1109ab-edcd-4a86-aed6-a0a3a587bd8a", -0.15F, AttributeModifier.Operation.MULTIPLY_TOTAL);
     static AttributeModifier lvl2 = new AttributeModifier("3f1109ab-edcd-4a86-aed6-a0a3a587bd8a", -0.3F, AttributeModifier.Operation.MULTIPLY_TOTAL);
 
