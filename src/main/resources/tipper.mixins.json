@@ -7,7 +7,7 @@
   "mixins": [
     "MendingMixin",
     "PowerMixin",
-    "EnchantingTableMixin",
+    "BookMixin",
     "ProtectionMixin",
     "SharpnessMixin"
   ],
