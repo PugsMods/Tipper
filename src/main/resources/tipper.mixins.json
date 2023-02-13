@@ -6,7 +6,6 @@
   "refmap": "tipper.refmap.json",
   "mixins": [
     "BookMixin",
-    "EnchantingMessageMixin",
     "MendingMixin",
     "PowerMixin",
     "ProtectionMixin",

@@ -1,4 +1,4 @@
-package com.pugzarecute.tipper.mixin;
+/*package com.pugzarecute.tipper.mixin;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TextComponent;
@@ -26,3 +26,4 @@ public class EnchantingMessageMixin {
         player.sendMessage(new TextComponent("The power of the enchanting table has been lost to time. Seek out the relics from the depths of dungeons."), UUID.randomUUID());
     }
 }
+*/
