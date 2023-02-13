@@ -1,6 +1,7 @@
 package com.pugzarecute.tipper;
 
 import com.pugzarecute.tipper.events.ArmorEventSubscriber;
+import com.pugzarecute.tipper.events.FirstJoinMessage;
 import com.pugzarecute.tipper.events.SkilletDebuffer;
 import com.pugzarecute.tipper.events.VillagerTradeEventSubscriber;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,6 +15,7 @@ public class Tipper {
     public Tipper(){
         MinecraftForge.EVENT_BUS.register(new VillagerTradeEventSubscriber());
         MinecraftForge.EVENT_BUS.register(new ArmorEventSubscriber());
+        MinecraftForge.EVENT_BUS.register(new FirstJoinMessage());
         MinecraftForge.EVENT_BUS.register(new SkilletDebuffer());
     }
     //Love mixins
