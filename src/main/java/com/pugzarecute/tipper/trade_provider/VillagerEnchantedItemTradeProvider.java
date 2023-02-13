@@ -16,7 +16,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class VillagerEnchantedItemTradeProvider implements VillagerTrades.ItemListing {
     @Nullable
     @Override
-    public MerchantOffer getOffer(Entity p_35706_, Random p_35707_) {
+    public MerchantOffer getOffer(Entity entity, Random random) {
         Map<Integer, Item> allocatableItemsMap = new HashMap<>();
         allocatableItemsMap.put(0,Items.IRON_AXE);
         allocatableItemsMap.put(1,Items.IRON_PICKAXE);

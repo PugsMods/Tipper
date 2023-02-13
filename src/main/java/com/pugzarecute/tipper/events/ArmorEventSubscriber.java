@@ -12,7 +12,7 @@ public class ArmorEventSubscriber {
     static AttributeModifier lvl2 = new AttributeModifier("3f1109ab-edcd-4a86-aed6-a0a3a587bd8a", -0.3F, AttributeModifier.Operation.MULTIPLY_TOTAL);
 
     @SubscribeEvent
-    public void eventX(LivingEquipmentChangeEvent event) {
+    public void onChangeEquipment(LivingEquipmentChangeEvent event) {
         double armorLevelCorrect = 0;
         for (ItemStack armorItem: event.getEntity().getArmorSlots()) {
             for(AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.HEAD).get(Attributes.ARMOR)){

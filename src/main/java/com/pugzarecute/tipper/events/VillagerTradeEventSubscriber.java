@@ -10,8 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class VillagerTradeEventSubscriber {
     @SubscribeEvent
-    public void pickupItem(VillagerTradesEvent event) {
-        //int villagerXp = 0;
+    public void onVillagerTradesCreate(VillagerTradesEvent event) {
         event.getTrades().forEach((_level, listings) ->
         {
             for (VillagerTrades.ItemListing m:

@@ -12,7 +12,7 @@ public class BookMixin {
      * @reason Disable book enchanting
      */
     @Overwrite
-    public boolean isEnchantable(ItemStack p_40646_) {
+    public boolean isEnchantable(ItemStack itemStack) {
         return false;
     }
 }

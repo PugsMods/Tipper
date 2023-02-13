@@ -11,7 +11,7 @@ public class FirstJoinMessage {
 
     final String NBT_TAG = "tipper.joinedBefore";
     @SubscribeEvent
-    public void playerJoin(PlayerEvent.PlayerLoggedInEvent event) {
+    public void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
         CompoundTag playerData = event.getPlayer().getPersistentData();
         if(playerData.get(NBT_TAG) != null) return;
         event.getPlayer().sendMessage(new TextComponent("The power of the enchanting table has been lost to time. Seek out the relics from the depths of dungeons."), UUID.randomUUID());

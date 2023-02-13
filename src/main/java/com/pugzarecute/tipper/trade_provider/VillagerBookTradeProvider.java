@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class VillagerBookTradeProvider implements VillagerTrades.ItemListing {
     @Nullable
     @Override
-    public MerchantOffer getOffer(Entity p_35706_, Random p_35707_) {
+    public MerchantOffer getOffer(Entity entity, Random random) {
         return new MerchantOffer(new ItemStack(Items.EMERALD, ThreadLocalRandom.current().nextInt(1,11)),new ItemStack(Items.BOOK,1),new ItemStack(Items.WRITABLE_BOOK),12,5,0.2F);
     }
 }
