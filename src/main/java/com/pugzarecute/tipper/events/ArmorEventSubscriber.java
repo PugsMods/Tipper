@@ -14,30 +14,30 @@ public class ArmorEventSubscriber {
     @SubscribeEvent
     public void onChangeEquipment(LivingEquipmentChangeEvent event) {
         double armorLevelCorrect = 0;
-        for (ItemStack armorItem: event.getEntity().getArmorSlots()) {
-            for(AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.HEAD).get(Attributes.ARMOR)){
+        for (ItemStack armorItem : event.getEntity().getArmorSlots()) {
+            for (AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.HEAD).get(Attributes.ARMOR)) {
                 armorLevelCorrect += ma.getAmount();
             }
-            for(AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.CHEST).get(Attributes.ARMOR)){
+            for (AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.CHEST).get(Attributes.ARMOR)) {
                 armorLevelCorrect += ma.getAmount();
             }
-            for(AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.LEGS).get(Attributes.ARMOR)){
+            for (AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.LEGS).get(Attributes.ARMOR)) {
                 armorLevelCorrect += ma.getAmount();
             }
-            for(AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.FEET).get(Attributes.ARMOR)){
+            for (AttributeModifier ma : armorItem.getAttributeModifiers(EquipmentSlot.FEET).get(Attributes.ARMOR)) {
                 armorLevelCorrect += ma.getAmount();
             }
         }
 
-        if(armorLevelCorrect >= 12 && armorLevelCorrect <=17){
+        if (armorLevelCorrect >= 12 && armorLevelCorrect <= 17) {
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl1);
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl2);
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(lvl1);
-        } else if(armorLevelCorrect >= 18 && armorLevelCorrect <=20){
+        } else if (armorLevelCorrect >= 18 && armorLevelCorrect <= 20) {
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl1);
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl2);
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(lvl2);
-        }else{
+        } else {
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl1);
             event.getEntityLiving().getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(lvl2);
         }

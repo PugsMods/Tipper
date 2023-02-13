@@ -18,10 +18,10 @@ public class VillagerEnchantedArmorTradeProvider implements VillagerTrades.ItemL
     @Override
     public MerchantOffer getOffer(Entity entity, Random random) {
         Map<Integer, Item> allocatableItemsMap = new HashMap<>();
-        allocatableItemsMap.put(0,Items.DIAMOND_BOOTS);
-        allocatableItemsMap.put(1,Items.DIAMOND_LEGGINGS);
-        allocatableItemsMap.put(2,Items.DIAMOND_CHESTPLATE);
-        allocatableItemsMap.put(3,Items.DIAMOND_HELMET);
-        return new MerchantOffer(new ItemStack(Items.EMERALD, ThreadLocalRandom.current().nextInt(1,21)),new ItemStack(allocatableItemsMap.get(ThreadLocalRandom.current().nextInt(0,allocatableItemsMap.size()+1)),1),12,5,0.2F);
+        allocatableItemsMap.put(0, Items.DIAMOND_BOOTS);
+        allocatableItemsMap.put(1, Items.DIAMOND_LEGGINGS);
+        allocatableItemsMap.put(2, Items.DIAMOND_CHESTPLATE);
+        allocatableItemsMap.put(3, Items.DIAMOND_HELMET);
+        return new MerchantOffer(new ItemStack(Items.EMERALD, ThreadLocalRandom.current().nextInt(1, 21)), new ItemStack(allocatableItemsMap.get(ThreadLocalRandom.current().nextInt(0, allocatableItemsMap.size() + 1)), 1), 12, 5, 0.2F);
     }
 }
